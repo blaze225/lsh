@@ -4,7 +4,6 @@ Created on 04-Apr-2017
 @author: ethan
 '''
 import numpy as np
-from scipy.interpolate import Rbf,InterpolatedUnivariateSpline,interp1d
 import math
 # import cv
 import sys
@@ -53,7 +52,7 @@ class SC(object):
         r_array_n = r_array / mean_dist
         # Create log distance scale #
         r_bin_edges = np.logspace(np.log10(self.r_inner),np.log10(self.r_outer),self.nbins_r)
-        print r_bin_edges
+        #print(r_bin_edges)
         # Create distance histogram #
         r_array_q = np.zeros((len(points),len(points)), dtype=int)
         for m in xrange(self.nbins_r):
