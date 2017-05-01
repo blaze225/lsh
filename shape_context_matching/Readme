@@ -1,10 +1,5 @@
-For MNIST dataset: KNN vs LSH
-python mnist.py
-
-For COIL dataset: KNN vs LSH
-python coil.py
-
 Shape Context Matching
+============================================================================================================================
 
 Dataset Used : MNIST hand written digit dataset.
 
